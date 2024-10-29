@@ -1,0 +1,102 @@
+/* src/styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Centering the entire app */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #485c70; /* Light background color */
+  }
+  
+  #root {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* App title */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* AddTask Input and Button */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #5a67d8; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4c51bf; /* Darker on hover */
+  }
+  
+  /* Task Styling */
+  .task-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .task-container.done {
+    text-decoration: line-through;
+    color: #a0aec0;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    margin-top: 20px;
+  }
+  
+  .filter-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: #edf2f7;
+    color: #4a5568;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #cbd5e0;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #5a67d8;
+    color: white;
+  }
+  
